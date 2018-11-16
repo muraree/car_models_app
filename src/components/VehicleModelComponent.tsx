@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Loader from 'react-loader'
 import Select from 'react-select';
 import ReactTable from 'react-table'
 
@@ -47,21 +48,23 @@ class VehicleModelComponent extends React.Component<IVehicleModelProps, IVehicle
             options={this.options}
           />
         </div>
-        <ReactTable
-          data={this.props.models[this.props.match.params.id]}
-          columns={[
-            {
-              Header: "ID",
-              accessor: "Model_ID",
-            },
-            {
-              Header: "Name",
-              accessor: "Model_Name",
-            }
-          ]}
-          defaultPageSize={10}
-          className="-striped -highlight"
-        />
+        <Loader loaded={this.props.loaded} className="spinner">
+          <ReactTable
+            data={this.props.models[this.props.match.params.id]}
+            columns={[
+              {
+                Header: "ID",
+                accessor: "Model_ID",
+              },
+              {
+                Header: "Name",
+                accessor: "Model_Name",
+              }
+            ]}
+            defaultPageSize={10}
+            className="-striped -highlight"
+          />
+        </Loader>
       </div>
     )
   }
