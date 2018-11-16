@@ -6,7 +6,6 @@ interface IVehicleModelProps {
       id: number
     }
   }
-  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => any
   options: string[]
   loaded: boolean
   models: []
