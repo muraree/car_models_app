@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Select from 'react-select';
 import ReactTable from 'react-table'
-import 'react-table/react-table.css'
 
 class VehicleModelComponent extends React.Component<IVehicleModelProps, IVehicleModelStates> {
   public options = [
