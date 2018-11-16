@@ -1,6 +1,6 @@
 import * as React from 'react'
-import * as Loader from 'react-loader';
-import ReactTable from "react-table"
+import Loader from 'react-loader'
+import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 
 class VehicleComponent extends React.Component<IVehicleProps> {

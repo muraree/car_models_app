@@ -2,7 +2,6 @@ import * as React from 'react';
 import Select from 'react-select';
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
-import './styles/VehicleModel.css'
 
 class VehicleModelComponent extends React.Component<IVehicleModelProps, IVehicleModelStates> {
   public options = [
@@ -42,7 +41,7 @@ class VehicleModelComponent extends React.Component<IVehicleModelProps, IVehicle
     return (
       <div className='text-center'>
         <h2> Vehicle Models Reports </h2>
-        <div className='year-select'>
+        <div className='col-md-4 offset-md-4'>
           <Select
             value={this.state.year}
             onChange={this.handleChange}
