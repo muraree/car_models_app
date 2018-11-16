@@ -10,9 +10,9 @@ class VehicleComponent extends React.Component<IVehicleProps> {
 
   public render() {
     return (
-      <Loader loaded={this.props.loaded} className="spinner">
-        <div className='center'>
-          <h2> Makes of Vehicle </h2>
+      <div className='text-center'>
+        <h2> Vehicle Reports </h2>
+        <Loader loaded={this.props.loaded} className="spinner">
           <ReactTable
             data={this.props.makes}
             columns={[
@@ -37,8 +37,8 @@ class VehicleComponent extends React.Component<IVehicleProps> {
             defaultPageSize={10}
             className="-striped -highlight"
           />
-        </div>
-      </Loader>
+        </Loader>
+      </div>
     )
   }
 
