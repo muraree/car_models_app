@@ -5,8 +5,8 @@ import { applyMiddleware, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import App from './App'
 import './index.css'
-import registerServiceWorker from './registerServiceWorker'
 import reducer from './reducers'
+import registerServiceWorker from './registerServiceWorker'
 import rootSaga from './sagas'
 
 // create the saga middleware
