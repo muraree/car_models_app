@@ -3,4 +3,5 @@ interface IAction {
   id?: number
   year?: number
   makes?: IMake
+  models?: IMakeModel[]
 }
